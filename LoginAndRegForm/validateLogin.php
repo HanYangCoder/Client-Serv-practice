@@ -16,15 +16,17 @@
         header ("Location: showusers.php");
     }
 
-    echo"
-    <script>
-        alert ('INVALID USER');
-    </script>
-    ";
+    else{
+        echo"
+        <script>
+            alert ('INVALID USER');
+        </script>
+        ";
 
-    echo"
-    <script>
-        window.location.href = 'index.php';
-    </script>
-    ";
+        echo"
+        <script>
+            window.location.href = 'index.php';
+        </script>
+        ";
+    }
 ?>
