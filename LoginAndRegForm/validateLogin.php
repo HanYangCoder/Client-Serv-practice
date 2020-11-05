@@ -12,6 +12,8 @@
             <script>
                 alert ('WELCOME USER');
             </script>";
+        
+        header ("Location: showusers.php");
     }
 
     echo"
