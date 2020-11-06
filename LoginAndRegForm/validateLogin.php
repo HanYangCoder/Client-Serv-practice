@@ -7,13 +7,26 @@
     $usersql = $conn->prepare ("Select * from user where username = '$username' AND password = '$password'");
     $usersql->execute();
 
-    if($user = $usersql->fetch()) {
-        echo"
+    if($user = $usersql->fetch()) { // fetched the data from the DB and transferred it into the variable $user 
+
+        if($user['userrole'] == 'admin'){
+            echo"
             <script>
                 alert ('WELCOME USER');
             </script>";
         
-        header ("Location: showusers.php");
+            header ("Location: showusers.php");
+        }
+        
+        else{
+            $id = $user['userid'];
+            echo"
+            <script>
+                alert ('WELCOME USER');
+            </script>";
+        
+            header ("Location: showprofile.php?id=$id");
+        }
     }
 
     else{
