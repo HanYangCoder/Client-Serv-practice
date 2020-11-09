@@ -19,7 +19,7 @@
         }
         
         else{
-            $id = $user['userid'];
+            $id = $user['userId'];
             echo"
             <script>
                 alert ('WELCOME USER');
