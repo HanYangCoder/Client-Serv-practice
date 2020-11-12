@@ -15,11 +15,16 @@
         border: 1px solid black;
         border-collapse: collapse;
     }
+
+    .center{
+        margin-left: auto;
+        margin-right: auto;
+    }
 </style>
 </head>
 
 <body>
-    <table>
+    <table class="center">
             <thead>
                 <tr> 
                     <th><p> User ID </p></th><th>
