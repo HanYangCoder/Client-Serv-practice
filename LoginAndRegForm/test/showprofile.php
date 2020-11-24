@@ -49,7 +49,7 @@
                             <th><p> User ID </p></th><th>
                             <th><p> User Name </p></th><th>
                             <th><p> Password </p></th><th>
-                            <th><p> Email </p></th><th>
+                            <th><p> Email </p></th><th></th><th>
                             <th><p> Actions </p></th><th></th>
                         </tr>
                     </thead>

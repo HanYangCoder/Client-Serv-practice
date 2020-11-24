@@ -2,7 +2,7 @@
     require ('db_connection.php');
     $id = $_GET['id'];
 
-    $deleteUserSql = $conn->prepare ("Delete * from user where userId='$id'");
+    $deleteUserSql = $conn->prepare ("Delete from user where userId='$id'");
     $deleteUserSql->execute();
 
     echo"
