@@ -44,10 +44,20 @@
     <form name= "sign_up" action="registersave.php" method="POST">
         <h2 class="text-center">Sign Up</h2>
 
-        <!--Username and Password and Re-type password-->
+        <!--Username-->
         <div class="form-group">
             <input type="text" id="username" name="username" class="form-control" placeholder="Enter Username" required="required">
         </div>
+
+        <!--first and last name insert here-->
+        <div class="form-group">
+            <input type="text" id="firstName" name="firstName" class="form-control" placeholder="Enter First Name" required="required">
+        </div>
+        <div class="form-group">
+            <input type="text" id="lastName" name="lastName" class="form-control" placeholder="Enter Last Name" required="required">
+        </div>
+
+        <!--Password and re-type password-->
         <div class="form-group">
             <input type="password" id="password" name="password" class="form-control" placeholder="Enter Password" required="required">
         </div>
@@ -55,12 +65,15 @@
             <input type="password" id="retypepassword" name="retypepassword" class="form-control" placeholder="Re-type Password" required="required">
         </div>
 
-        <!--Email and contact number-->
+        <!--Contact num, address, and email-->
         <div class="form-group">
-            <input type="text" id="email" name="email" class="form-control" placeholder="Enter Email" required="required">
+            <input type="text" id="contactNumber" name="contactNumber" class="form-control" placeholder="Enter Contact number" required="required">
         </div>
         <div class="form-group">
-            <input type="text" id="contactnumber" name="contactnumber" class="form-control" placeholder="Enter Contact number" required="required">
+            <input type="text" id="address" name="address" class="form-control" placeholder="Enter Address" required="required">
+        </div>
+        <div class="form-group">
+            <input type="text" id="email" name="email" class="form-control" placeholder="Enter Email" required="required">
         </div>
 
         <!--Create Account-->
