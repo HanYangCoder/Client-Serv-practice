@@ -60,9 +60,9 @@
                             <td><p><?= $showUsers['username']; ?> </p><td>
                             <td><p><?= $showUsers['password']; ?> </p><td>
                             <td><p><?= $showUsers['email']; ?> </p><td>
-                            <td><a href="update_form.php?id=<?= $usersList['userid'] ?>">Update</a></td>
-                            <td><a href="delete.php?id=<?= $usersList['userid'] ?>">Delete</a></td>
-                            <td><a href="set.php?id=<?= $usersList['userid'] ?>">Set as Admin</a></td>
+                            <td><a href="update_form.php?id=<?= $usersList['userId'] ?>">Update</a></td>
+                            <td><a href="delete.php?id=<?= $usersList['userId'] ?>">Delete</a></td>
+                            <td><a href="set.php?id=<?= $usersList['userId'] ?>">Set as Admin</a></td>
                         </tr>
                     </tbody>
     </table>
