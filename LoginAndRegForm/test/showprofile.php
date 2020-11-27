@@ -68,7 +68,7 @@
                             <td><p><?= $showUsers['contactNumber']; ?> </p><td>
                             <td><p><?= $showUsers['address']; ?> </p><td>
                             <td><p><?= $showUsers['email']; ?> </p><td>
-                            <td><a href="update_form.php?id=<?= $usersList['userId'] ?>">Update</a></td>
+                            <td><a href="update_form.php?id=<?= $showUsers['userId'] ?>">Update</a></td>
                         </tr>
                     </tbody>
     </table>
