@@ -48,9 +48,13 @@
                         <tr> 
                             <th><p> User ID </p></th><th>
                             <th><p> User Name </p></th><th>
+                            <th><p> First Name </p></th><th>
+                            <th><p> Last Name </p></th><th>
                             <th><p> Password </p></th><th>
-                            <th><p> Email </p></th><th></th><th>
-                            <th><p> Actions </p></th><th></th>
+                            <th><p> Contact Number </p></th><th>
+                            <th><p> Address </p></th><th>
+                            <th><p> Email </p></th><th></th>
+                            <th><p> Actions </p></th>
                         </tr>
                     </thead>
 
@@ -58,11 +62,13 @@
                         <tr>
                             <td><p><?= $showUsers['userId']; ?> </p><td>
                             <td><p><?= $showUsers['username']; ?> </p><td>
+                            <td><p><?= $showUsers['firstName']; ?> </p><td>
+                            <td><p><?= $showUsers['lastName']; ?> </p><td>
                             <td><p><?= $showUsers['password']; ?> </p><td>
+                            <td><p><?= $showUsers['contactNumber']; ?> </p><td>
+                            <td><p><?= $showUsers['address']; ?> </p><td>
                             <td><p><?= $showUsers['email']; ?> </p><td>
                             <td><a href="update_form.php?id=<?= $usersList['userId'] ?>">Update</a></td>
-                            <td><a href="delete.php?id=<?= $usersList['userId'] ?>">Delete</a></td>
-                            <td><a href="set.php?id=<?= $usersList['userId'] ?>">Set as Admin</a></td>
                         </tr>
                     </tbody>
     </table>

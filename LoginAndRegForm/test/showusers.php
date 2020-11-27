@@ -46,9 +46,13 @@
                 <tr> 
                     <th><p> User ID </p></th><th>
                     <th><p> User Name </p></th><th>
+                    <th><p> First Name </p></th><th>
+                    <th><p> Last Name </p></th><th>
                     <th><p> Password </p></th><th>
+                    <th><p> Contact Number </p></th><th>
+                    <th><p> Address </p></th><th>
                     <th><p> Email </p></th><th>
-                    <th><p> User role </p></th><th>
+                    <th><p> User Role </p></th><th>
                     <th><p> Actions </p></th><th></th>
                 </tr>
             </thead>
@@ -57,7 +61,11 @@
                 <tr>
                     <td><p><?= $usersList['userId']; ?> </p><td>
                     <td><p><?= $usersList['username']; ?> </p><td>
+                    <td><p><?= $usersList['firstName']; ?> </p><td>
+                    <td><p><?= $usersList['lastName']; ?> </p><td>
                     <td><p><?= $usersList['password']; ?> </p><td>
+                    <td><p><?= $usersList['contactNumber']; ?> </p><td>
+                    <td><p><?= $usersList['address']; ?> </p><td>
                     <td><p><?= $usersList['email']; ?> </p><td>
                     <td><p><?= $usersList['userrole'] ?></p></td>
                     <td><a href="update_form.php?id=<?= $usersList['userId'] ?>">Update</a></td>
